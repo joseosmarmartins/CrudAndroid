@@ -44,7 +44,7 @@ public class UsuarioDao {
         try {
             SQLiteDatabase db = banco.getReadableDatabase();
             Cursor cursor = db.query("USER", new String[]{"ID", "NOME", "CPF", "TELEFONE", "EMAIL"},
-                    nome != null && !nome.isEmpty() ? "NOME LIKE '%?%'" : null,
+                    nome != null && !nome.isEmpty() ? "NOME=?" : null,
                     nome != null && !nome.isEmpty() ? new String[]{nome} : null, null, null, null);
 
             List<Usuario> usuarioList = new ArrayList<>();
