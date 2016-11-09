@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/campoNome"
+        android:hint="Nome" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/campoTelefone"
+        android:hint="Telefone" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/campoEmail"
+        android:hint="E-mail" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/campoCpf"
+        android:hint="CPF" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.26">
+
+        <Button
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:id="@+id/botaoCadastrar"
+            android:layout_gravity="left|top" />
+
+        <Button
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:id="@+id/botaoCancelar"
+            android:layout_gravity="right|top"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deletar"
+            android:id="@+id/botaoDeletar"
+            android:layout_gravity="left|bottom" />
+    </FrameLayout>
+
+</LinearLayout>
